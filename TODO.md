@@ -36,4 +36,5 @@ Aqui estão os passos:
     - [ ] Um `README.md` completo, explicando o projeto, as três partes, os objetivos e as fontes de dados.
     - [ ] A subpasta `docs` ou `assets` com os arquivos de texto.
 - [ ] **Confirme que os links** para os dados numéricos e as imagens estão públicos e acessíveis.
-- [ ] **Submeta o link do repositório** na plataforma da FIAP, garantindo que não deixará para a última hora e que o repositório está correto, pois não há segunda chance de envio.
+- [ ] Tornar **o repositório público.**
+- [x] **Submeta o link do repositório** na plataforma da FIAP, garantindo que não deixará para a última hora e que o repositório está correto, pois não há segunda chance de envio.
