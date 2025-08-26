@@ -53,7 +53,7 @@ CardioIA/
 ### ✅ **Status: CONCLUÍDO**
 
 ### 📁 **Arquivos de Dados**
-- **Dataset Principal**: [https://docs.google.com/spreadsheets/d/1ORs0W-SfhUboAbOAMELbmYAZ_VGF-Dd_lw4O-zPUKNg/edit?usp=drive_link)
+- **Dataset Principal**: [heart_disease_processed.csv]([datasets/numeric/heart_disease_processed.csv](https://docs.google.com/spreadsheets/d/1ORs0W-SfhUboAbOAMELbmYAZ_VGF-Dd_lw4O-zPUKNg/edit?usp=drive_link))
 - **Planilha Excel**: [dataset_doencas_cardiacas.xlsx](datasets/numeric/dataset_doencas_cardiacas.xlsx)
 - **Relatório Completo**: [relatorio_dataset_cardiaco.md](docs/relatorio_dataset_cardiaco.md)
 
