@@ -53,6 +53,11 @@ CardioIA/
 ### ✅ **Status: CONCLUÍDO**
 
 ### 📁 **Arquivos de Dados**
+
+#### **🔗 Link para Dados Completos (Google Drive):**
+**[📊 Dataset CardioIA - Dados Numéricos](https://drive.google.com/drive/folders/1MVGRajXHamQ81FYPaeWpcSY2UmrDjWy7?usp=drive_link)**
+
+*Acesso público aos arquivos completos do projeto, incluindo datasets, planilhas, relatórios e visualizações.*
 - **Dataset Principal**: [heart_disease_processed.csv](datasets/numeric/heart_disease_processed.csv)
 - **Planilha Excel**: [dataset_doencas_cardiacas.xlsx](datasets/numeric/dataset_doencas_cardiacas.xlsx)
 - **Relatório Completo**: [relatorio_dataset_cardiaco.md](docs/relatorio_dataset_cardiaco.md)
