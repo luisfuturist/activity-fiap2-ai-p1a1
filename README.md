@@ -68,6 +68,26 @@ Os dados são **100% reais** e provêm do renomado **UCI Machine Learning Reposi
 - **Licença**: Creative Commons Attribution 4.0 International
 - **DOI**: 10.24432/C52P4X
 
+### ⚠️ **Considerações Importantes sobre a Idade dos Dados**
+
+**Limitação Temporal (1988):**
+- **Contexto Médico**: A cardiologia evoluiu significativamente desde 1988
+- **Novos Tratamentos**: Estatinas, stents, procedimentos minimamente invasivos
+- **Tecnologia Diagnóstica**: Equipamentos mais precisos e novos biomarcadores
+- **Demografia**: Mudanças nos padrões populacionais e fatores de risco
+
+**Por que ainda é Relevante:**
+- **Fisiologia Humana**: Os fundamentos cardiovasculares permanecem os mesmos
+- **Variáveis Core**: Idade, sexo, pressão arterial, colesterol continuam sendo fatores de risco primários
+- **Padrões Básicos**: Relações entre sintomas e diagnóstico mantêm validade
+- **Benchmark Acadêmico**: Amplamente usado para comparação de algoritmos
+
+**Estratégias de Mitigação:**
+1. **Validação Cruzada**: Testar modelos em datasets mais recentes quando disponíveis
+2. **Transfer Learning**: Usar como base para fine-tuning com dados modernos
+3. **Análise Comparativa**: Comparar com estudos epidemiológicos atuais
+4. **Disclaimer Clínico**: Sempre indicar limitações temporais em aplicações práticas
+
 ### 📈 **Características do Dataset**
 
 - **Total de Pacientes**: 297 registros
@@ -128,10 +148,42 @@ Os dados são **100% reais** e provêm do renomado **UCI Machine Learning Reposi
 3. **Medicina Preventiva**: Identificação de fatores de risco modificáveis
 4. **Análise Epidemiológica**: Padrões populacionais de doenças cardíacas
 
-### 📊 **Visualizações Disponíveis**
-- **Distribuição Demográfica**: Idade, sexo e prevalência de doença
-- **Correlações**: Matriz de correlação entre variáveis numéricas
-- **Padrões Clínicos**: Relações entre sintomas e diagnóstico
+### 📊 **Qualidade e Limitações dos Dados**
+
+#### **Pontos Fortes:**
+- ✅ **Dados Reais**: Coletados em ambiente clínico real
+- ✅ **Padrão-Ouro**: Diagnóstico baseado em angiografia
+- ✅ **Completude**: Apenas 2% de valores ausentes
+- ✅ **Balanceamento**: 46% positivos, 54% negativos
+- ✅ **Diversidade**: Ampla faixa etária e ambos os sexos
+- ✅ **Validação Acadêmica**: Amplamente utilizado na literatura científica
+
+#### **Limitações Importantes:**
+- ⚠️ **Idade dos Dados**: Coletados em 1988 (37 anos atrás)
+- ⚠️ **Evolução Médica**: Medicina cardiovascular evoluiu significativamente
+- ⚠️ **População Específica**: Principalmente caucasiana (Cleveland, EUA)
+- ⚠️ **Tamanho Limitado**: 297 registros (adequado para proof-of-concept)
+- ⚠️ **Contexto Tecnológico**: Equipamentos e protocolos diagnósticos desatualizados
+
+#### **Impacto das Limitações Temporais:**
+1. **Tratamentos**: Estatinas, stents e terapias modernas não existiam
+2. **Diagnóstico**: Tecnologia de imagem e biomarcadores mais limitados
+3. **Demografia**: Padrões populacionais de risco podem ter mudado
+4. **Estilo de Vida**: Fatores como sedentarismo e dieta evoluíram
+
+#### **Recomendações para Uso:**
+- 🎯 **Fins Educacionais**: Excelente para aprender conceitos de ML em saúde
+- 🎯 **Prototipagem**: Ideal para desenvolver e testar algoritmos
+- 🎯 **Benchmark**: Comparação com outros métodos de ML
+- ⚠️ **Aplicação Clínica**: Requer validação com dados contemporâneos
+
+#### **Alternativas de Datasets Mais Recentes:**
+Para projetos que exigem dados mais atuais, considere:
+- **Framingham Heart Study**: Dados longitudinais mais recentes
+- **MIMIC-III/IV**: Dados hospitalares modernos (requer autorização)
+- **UK Biobank**: Grande coorte populacional contemporânea
+- **Kaggle Heart Disease**: Compilações de datasets mais recentes
+- **Dados Sintéticos**: Geração de dados baseada em distribuições modernas
 
 ---
 
