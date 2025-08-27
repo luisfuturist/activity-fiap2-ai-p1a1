@@ -441,19 +441,15 @@ def analyze_symptoms(text):
 
 ## 🚀 Próximas Etapas
 
-1. **Integração de Dados**: Combinar as três modalidades de dados
-2. **Desenvolvimento de Modelos**: Criar algoritmos de IA especializados
-3. **Validação Clínica**: Testar modelos com especialistas
-4. **Interface de Usuário**: Desenvolver sistema para uso hospitalar
-5. **Implantação**: Deploy em ambiente de produção simulado
+Para informações sobre as próximas etapas, consulte o arquivo [OVERVIEW.md](OVERVIEW.md).
 
 ---
 
 ## 👥 Equipe
 
-- **Parte 1 (Dados Numéricos)**: [Nome do Responsável]
-- **Parte 2 (Dados Textuais)**: [A ser preenchido]
-- **Parte 3 (Dados Visuais)**: [A ser preenchido]
+- Gustavo Castro (RM560831)
+- Luis Emidio (RM559976)
+- Matheus Conciani (RM559473) 
 
 ---
 
@@ -465,13 +461,6 @@ def analyze_symptoms(text):
 
 ---
 
-## 📄 Licença
-
-Este projeto é desenvolvido para fins educacionais como parte do curso da FIAP. Os dados utilizados seguem suas respectivas licenças originais.
-
----
-
 **Projeto desenvolvido para FIAP - Fase 1: Batimentos de Dados**  
-**Ano**: 2025  
-**Versão**: 1.0
 
+[LICENSE.md](LICENSE.md)

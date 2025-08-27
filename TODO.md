@@ -16,9 +16,9 @@ Aqui estão os passos:
 
 ### 2. Dados Textuais (NLP)
 
-- [x] **Baixe pelo menos dois textos** (`.txt`) sobre saúde cardiovascular de fontes como SciELO ou Projeto Gutenberg.
+- [ ] **Baixe pelo menos dois textos** (`.txt`) sobre saúde cardiovascular de fontes como SciELO ou Projeto Gutenberg.
 - [x] **Crie uma subpasta** chamada `assets` ou `docs` no seu repositório.
-- [x] **Adicione os arquivos de texto** a essa subpasta.
+- [ ] **Adicione os arquivos de texto** a essa subpasta.
 - [x] No `README.md`, **explique como esses textos podem ser analisados** por algoritmos de NLP (extração de sintomas, etc.).
 - [x] **Justifique a importância** dessas análises para o projeto.
 
