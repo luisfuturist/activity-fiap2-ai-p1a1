@@ -194,14 +194,182 @@ Para projetos que exigem dados mais atuais, considere:
 
 ## 📝 Parte 2 - Dados Textuais (NLP)
 
-### ⏳ **Status: A SER DESENVOLVIDO**
+### 📁 Arquivos de Dados
 
-*Esta seção será preenchida pelos integrantes responsáveis pela coleta e análise de textos médicos.*
+#### 📚 Textos Médicos Coletados:
 
-**Objetivos:**
-- Coletar textos de fontes como SciELO, BVS, artigos do SUS
-- Preparar dados para análise de sentimentos, extração de sintomas
-- Desenvolver classificação de tópicos médicos
+- **Epidemiologia**: [doencas_cardiovasculares_epidemiologia.txt](assets/textual/doencas_cardiovasculares_epidemiologia.txt)
+- **Cardiologia Clínica**: [cardiologia_clinica.txt](assets/textual/cardiologia_clinica.txt)
+
+### 🏥 Origem e Características dos Textos
+
+Os textos foram criados especificamente para o projeto CardioIA, baseados em literatura médica real e atualizada sobre cardiologia. Eles contêm:
+
+#### 📊 Características dos Arquivos:
+
+- **Total de Arquivos**: 2 textos especializados
+- **Formato**: Arquivos `.txt` para fácil processamento
+- **Conteúdo**: Literatura médica sobre cardiologia
+- **Tamanho**: ~9.6KB de dados textuais
+- **Idioma**: Português brasileiro
+- **Especialização**: Cardiologia e epidemiologia cardiovascular
+
+#### 📋 Conteúdo dos Textos:
+
+1. Epidemiologia das Doenças Cardiovasculares:
+
+- Fatores de risco principais (hipertensão, diabetes, obesidade, tabagismo)
+- Manifestações clínicas (IAM, angina, insuficiência cardíaca, AVC)
+- Dados epidemiológicos e estatísticas
+- Medidas preventivas e controle
+
+2. Cardiologia Clínica - Diagnóstico e Tratamento:
+
+- História clínica em cardiologia
+- Exame físico cardiovascular
+- Exames complementares (ECG, ecocardiograma, cateterismo)
+- Principais doenças cardiovasculares
+- Tratamentos e procedimentos
+- Prevenção cardiovascular
+
+### 🤖 Aplicações em Processamento de Linguagem Natural (NLP)
+
+#### 🔍 Técnicas de Análise Implementáveis:
+
+1. Extração de Sintomas e Sinais:
+
+```python
+# Exemplo de extração de sintomas cardíacos
+cardiac_symptoms = [
+    "dor torácica", "dispneia", "palpitações", 
+    "síncope", "edema", "fadiga", "sudorese"
+]
+```
+
+2. Identificação de Fatores de Risco:
+
+- **Hipertensão arterial**: Detecção de valores pressóricos
+- **Diabetes mellitus**: Identificação de critérios diagnósticos
+- **Dislipidemia**: Níveis de colesterol e triglicerídeos
+- **Tabagismo**: Hábitos de fumo e cessação
+- **Obesidade**: IMC e circunferência abdominal
+
+3. Classificação de Doenças Cardiovasculares:
+
+- **Doença arterial coronariana**
+- **Insuficiência cardíaca**
+- **Valvulopatias**
+- **Arritmias cardíacas**
+- **Acidente vascular cerebral**
+
+4. Análise de Sentimentos em Textos Médicos:
+
+- **Urgência**: Identificação de situações emergenciais
+- **Gravidade**: Classificação da severidade das condições
+- **Prognóstico**: Análise de expectativas de evolução
+
+5. Extração de Relacionamentos Médicos:
+
+- **Sintoma → Doença**: Mapeamento de manifestações clínicas
+- **Fator de Risco → Complicação**: Relações causais
+- **Tratamento → Eficácia**: Resultados terapêuticos
+
+#### 🧠 Algoritmos de NLP Recomendados:
+
+1. Named Entity Recognition (NER):
+
+- **SpaCy**: Para identificação de entidades médicas
+- **BERT Médico**: Modelo especializado em textos de saúde
+- **BioBERT**: Para reconhecimento de termos biomédicos
+
+2. Classificação de Texto:
+
+- **TF-IDF + SVM**: Para categorização de documentos
+- **Word2Vec**: Para representação vetorial de termos médicos
+- **BERT**: Para classificação contextual avançada
+
+3. Extração de Informações:
+
+- **Regex Patterns**: Para valores numéricos (pressão, colesterol)
+- **Rule-based Systems**: Para sintomas e diagnósticos
+- **Information Extraction**: Para relacionamentos médicos
+
+4. Análise Semântica:
+
+- **Topic Modeling**: Identificação de tópicos médicos
+- **Sentiment Analysis**: Análise de urgência e gravidade
+- **Text Summarization**: Resumo de prontuários médicos
+
+### 🎯 Casos de Uso Específicos para CardioIA
+
+#### 1. Assistente de Diagnóstico Inteligente:
+
+```python
+# Exemplo de pipeline de análise
+def analyze_symptoms(text):
+    symptoms = extract_symptoms(text)
+    risk_factors = identify_risk_factors(text)
+    probability = calculate_cardiovascular_risk(symptoms, risk_factors)
+    return generate_recommendations(probability)
+```
+
+#### 2. Classificação Automática de Prontuários:
+
+- **Categorização**: Por tipo de doença cardiovascular
+- **Priorização**: Por urgência e gravidade
+- **Roteamento**: Para especialistas apropriados
+
+#### 3. Extração de Dados para Pesquisa:
+
+- **Epidemiologia**: Padrões populacionais de doenças
+- **Farmacovigilância**: Efeitos adversos de medicamentos
+- **Qualidade Assistencial**: Indicadores de atendimento
+
+#### 4. Sistema de Alertas Inteligentes:
+
+- **Detecção de Emergências**: Sintomas de alto risco
+- **Monitoramento**: Evolução de pacientes
+- **Prevenção**: Identificação de fatores de risco
+
+### 📈 Métricas de Qualidade dos Dados
+
+#### ✅ Pontos Fortes:
+
+- **Especialização**: Conteúdo específico de cardiologia
+- **Atualização**: Baseado em literatura médica recente
+- **Estruturação**: Organização clara por tópicos
+- **Completude**: Cobertura abrangente da especialidade
+- **Linguagem**: Português brasileiro médico
+
+#### ⚠️ Limitações:
+
+- **Volume**: Apenas 2 textos (adequado para prototipagem)
+- **Variedade**: Limitado a cardiologia (foco específico)
+- **Interatividade**: Textos estáticos (não interativos)
+- **Validação**: Necessita revisão por especialistas
+
+### 🔬 Próximos Passos para Expansão
+
+#### 1. Ampliação do Corpus:
+
+- **Artigos Científicos**: Integração com PubMed/SciELO
+- **Prontuários Médicos**: Dados clínicos reais (anônimos)
+- **Guias Clínicos**: Protocolos de tratamento
+- **Casos Clínicos**: Relatos de casos complexos
+
+#### 2. Processamento Avançado:
+
+- **Análise Temporal**: Evolução de sintomas
+- **Correlação Multimodal**: Integração com dados numéricos
+- **Personalização**: Adaptação por perfil do paciente
+- **Aprendizado Contínuo**: Atualização de modelos
+
+#### 3. Validação Clínica:
+
+- **Revisão por Especialistas**: Cardiologistas experientes
+- **Testes de Usabilidade**: Interface médica
+- **Estudos de Precisão**: Comparação com diagnóstico humano
+- **Certificação**: Aprovação regulatória quando aplicável
 
 ---
 
