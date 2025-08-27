@@ -29,21 +29,11 @@ CardioIA/
 │   ├── numeric/
 │   │   ├── heart_disease_processed.csv
 │   │   └── dataset_doencas_cardiacas.xlsx
-│   ├── textual/
-│   │   └── [A ser desenvolvido pelos integrantes]
 │   └── visual/
 │       └── [A ser desenvolvido pelos integrantes]
-├── docs/
-│   ├── relatorio_dataset_cardiaco.md
-│   └── [Documentação adicional]
-├── assets/
-│   ├── heart_disease_overview.png
-│   ├── correlation_matrix.png
-│   └── [Recursos visuais]
-└── scripts/
-    ├── heart_disease_analysis.py
-    ├── process_heart_data.py
-    └── create_excel_dataset.py
+└── assets/
+    └── textual/
+        └── [Documentação adicional]
 ```
 
 ---
@@ -194,85 +184,132 @@ Para projetos que exigem dados mais atuais, considere:
 
 ## 📝 Parte 2 - Dados Textuais (NLP)
 
+### **Pesquisa de Dados NLP Cardíacos**
+
+A pesquisa realizada sobre dados NLP cardíacos está disponível em 3 formatos:
+
+- [PDF](research/Pesquisa_de_Dados_NLP_Cardiacos.pdf)
+- [Markdown](research/Pesquisa_de_Dados_NLP_Cardiacos.md)
+- [Google Docs](https://docs.google.com/document/d/1VWUvAUArbplo_Hc-aQJ_L6XYFMTIYwAIe_UNLfuX28Y)
+
 ### 📁 Arquivos de Dados
 
-#### 📚 Textos Médicos Coletados:
+#### 📚 **Textos Coletados de Fontes Acadêmicas:**
 
-- **Epidemiologia**: [doencas_cardiovasculares_epidemiologia.txt](assets/textual/doencas_cardiovasculares_epidemiologia.txt)
-- **Cardiologia Clínica**: [cardiologia_clinica.txt](assets/textual/cardiologia_clinica.txt)
+// TODO
 
 ### 🏥 Origem e Características dos Textos
 
-Os textos foram criados especificamente para o projeto CardioIA, baseados em literatura médica real e atualizada sobre cardiologia. Eles contêm:
+Os textos foram coletados de fontes acadêmicas reais conforme especificado no enunciado, incluindo:
 
 #### 📊 Características dos Arquivos:
 
-- **Total de Arquivos**: 2 textos especializados
-- **Formato**: Arquivos `.txt` para fácil processamento
-- **Conteúdo**: Literatura médica sobre cardiologia
-- **Tamanho**: ~9.6KB de dados textuais
-- **Idioma**: Português brasileiro
-- **Especialização**: Cardiologia e epidemiologia cardiovascular
+// TODO
+
+#### 📋 Fontes Utilizadas:
+
+// TODO
 
 #### 📋 Conteúdo dos Textos:
 
-1. Epidemiologia das Doenças Cardiovasculares:
-
-- Fatores de risco principais (hipertensão, diabetes, obesidade, tabagismo)
-- Manifestações clínicas (IAM, angina, insuficiência cardíaca, AVC)
-- Dados epidemiológicos e estatísticas
-- Medidas preventivas e controle
-
-2. Cardiologia Clínica - Diagnóstico e Tratamento:
-
-- História clínica em cardiologia
-- Exame físico cardiovascular
-- Exames complementares (ECG, ecocardiograma, cateterismo)
-- Principais doenças cardiovasculares
-- Tratamentos e procedimentos
-- Prevenção cardiovascular
+// TODO
 
 ### 🤖 Aplicações em Processamento de Linguagem Natural (NLP)
 
-#### 🔍 Técnicas de Análise Implementáveis:
+#### 🔍 **Como os Textos Podem Ser Analisados por Algoritmos de NLP:**
 
-1. Extração de Sintomas e Sinais:
+Os textos coletados podem ser processados por diferentes técnicas de NLP para extrair informações valiosas para o projeto CardioIA:
+
+##### 1. **Reconhecimento de Entidades Nomeadas (NER) - Extração de Sintomas e Sinais:**
 
 ```python
-# Exemplo de extração de sintomas cardíacos
+# Exemplo de extração de sintomas cardíacos dos textos
 cardiac_symptoms = [
     "dor torácica", "dispneia", "palpitações", 
-    "síncope", "edema", "fadiga", "sudorese"
+    "síncope", "edema", "fadiga", "sudorese",
+    "tontura", "ansiedade", "nervosismo"
 ]
+
+# Aplicação: Identificar automaticamente sintomas em prontuários
+def extract_symptoms(text):
+    symptoms = []
+    for symptom in cardiac_symptoms:
+        if symptom.lower() in text.lower():
+            symptoms.append(symptom)
+    return symptoms
 ```
 
-2. Identificação de Fatores de Risco:
+**Relevância**: Permite triagem automática de pacientes baseada em sintomas descritos, agilizando o processo de atendimento e priorização de casos.
 
-- **Hipertensão arterial**: Detecção de valores pressóricos
-- **Diabetes mellitus**: Identificação de critérios diagnósticos
-- **Dislipidemia**: Níveis de colesterol e triglicerídeos
-- **Tabagismo**: Hábitos de fumo e cessação
+##### 2. **Identificação de Fatores de Risco:**
+
+- **Hipertensão arterial**: Detecção de valores pressóricos e termos relacionados
+- **Diabetes mellitus**: Identificação de critérios diagnósticos e complicações
+- **Dislipidemia**: Níveis de colesterol e triglicerídeos mencionados
+- **Tabagismo**: Hábitos de fumo e programas de cessação
 - **Obesidade**: IMC e circunferência abdominal
 
-3. Classificação de Doenças Cardiovasculares:
+**Relevância**: Facilita a identificação automática de pacientes de alto risco cardiovascular, permitindo intervenções preventivas.
 
-- **Doença arterial coronariana**
-- **Insuficiência cardíaca**
-- **Valvulopatias**
-- **Arritmias cardíacas**
-- **Acidente vascular cerebral**
+##### 3. **Classificação de Doenças Cardiovasculares:**
 
-4. Análise de Sentimentos em Textos Médicos:
+- **Doença arterial coronariana**: Termos como "estenose", "angina", "infarto"
+- **Insuficiência cardíaca**: "edema", "dispneia", "fadiga"
+- **Valvulopatias**: "estenose mitral", "insuficiência aórtica"
+- **Arritmias cardíacas**: "fibrilação atrial", "taquicardia"
+- **Acidente vascular cerebral**: "AVC", "isquemia cerebral"
 
-- **Urgência**: Identificação de situações emergenciais
-- **Gravidade**: Classificação da severidade das condições
-- **Prognóstico**: Análise de expectativas de evolução
+**Relevância**: Permite categorização automática de prontuários e direcionamento para especialistas apropriados.
 
-5. Extração de Relacionamentos Médicos:
+##### 4. **Análise de Sentimentos em Textos Médicos:**
 
-- **Sintoma → Doença**: Mapeamento de manifestações clínicas
-- **Fator de Risco → Complicação**: Relações causais
-- **Tratamento → Eficácia**: Resultados terapêuticos
+- **Urgência**: Identificação de situações emergenciais ("dor intensa", "falta de ar súbita")
+- **Gravidade**: Classificação da severidade das condições ("estável", "crítico")
+- **Prognóstico**: Análise de expectativas de evolução ("favorável", "reservado")
+
+**Relevância**: Ajuda na priorização de atendimentos e identificação de casos que requerem intervenção imediata.
+
+##### 5. **Extração de Relacionamentos Médicos:**
+
+- **Sintoma → Doença**: Mapeamento de manifestações clínicas com diagnósticos
+- **Fator de Risco → Complicação**: Relações causais entre condições
+- **Tratamento → Eficácia**: Resultados terapêuticos e respostas ao tratamento
+
+**Relevância**: Construção de bases de conhecimento médico para suporte à decisão clínica.
+
+#### 🎯 **Importância das Análises de NLP para o Projeto CardioIA:**
+
+As análises de NLP são fundamentais para o sucesso do projeto CardioIA pelos seguintes motivos:
+
+##### **1. Transformação de Dados Não Estruturados em Informação Acionável:**
+- **Problema**: 80% dos dados médicos estão em formato textual não estruturado
+- **Solução**: NLP converte prontuários, relatórios e literatura em dados estruturados
+- **Impacto**: Permite análise quantitativa de informações qualitativas
+
+##### **2. Automação de Processos Clínicos:**
+- **Triagem Inteligente**: Identificação automática de sintomas e priorização de casos
+- **Diagnóstico Assistido**: Sugestões baseadas em padrões textuais
+- **Monitoramento Contínuo**: Análise de evolução clínica através de textos
+
+##### **3. Redução de Erros Médicos:**
+- **Padronização**: Eliminação de variações na terminologia médica
+- **Validação**: Verificação automática de consistência em prontuários
+- **Alertas**: Identificação de informações contraditórias ou ausentes
+
+##### **4. Personalização do Cuidado:**
+- **Perfil do Paciente**: Análise de histórico médico textual
+- **Preferências**: Identificação de padrões de comunicação e compreensão
+- **Aderência**: Monitoramento de relatos sobre medicação e tratamento
+
+##### **5. Pesquisa e Desenvolvimento:**
+- **Mineração de Literatura**: Análise de artigos científicos para descobertas
+- **Farmacovigilância**: Detecção de efeitos adversos em relatórios
+- **Epidemiologia**: Identificação de padrões populacionais em textos médicos
+
+##### **6. Governança de Dados e Ética:**
+- **Transparência**: Processamento claro e auditável de dados textuais
+- **Privacidade**: Anonimização automática de informações pessoais
+- **Viés**: Detecção e mitigação de preconceitos em textos médicos
 
 #### 🧠 Algoritmos de NLP Recomendados:
 
@@ -343,10 +380,10 @@ def analyze_symptoms(text):
 
 #### ⚠️ Limitações:
 
-- **Volume**: Apenas 2 textos (adequado para prototipagem)
-- **Variedade**: Limitado a cardiologia (foco específico)
+- **Volume**: 3 textos (mínimo exigido atendido, mas pode ser expandido)
+- **Variedade**: Foco específico em cardiologia
 - **Interatividade**: Textos estáticos (não interativos)
-- **Validação**: Necessita revisão por especialistas
+- **Validação**: Necessita revisão por especialistas para aplicação clínica
 
 ### 🔬 Próximos Passos para Expansão
 
