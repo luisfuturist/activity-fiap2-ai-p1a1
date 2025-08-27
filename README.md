@@ -184,7 +184,7 @@ Para projetos que exigem dados mais atuais, considere:
 
 ## 📝 Parte 2 - Dados Textuais (NLP)
 
-### **Pesquisa de Dados NLP Cardíacos**
+### 📚 **Pesquisa de Dados NLP Cardíacos**
 
 A pesquisa realizada sobre dados NLP cardíacos está disponível em 3 formatos:
 
@@ -192,27 +192,57 @@ A pesquisa realizada sobre dados NLP cardíacos está disponível em 3 formatos:
 - [Markdown](research/Pesquisa_de_Dados_NLP_Cardiacos.md)
 - [Google Docs](https://docs.google.com/document/d/1VWUvAUArbplo_Hc-aQJ_L6XYFMTIYwAIe_UNLfuX28Y)
 
-### 📁 Arquivos de Dados
+### 📁 **Arquivos de Dados Textuais**
 
-#### 📚 **Textos Coletados de Fontes Acadêmicas:**
+#### 📚 **Textos Coletados do Projeto Gutenberg:**
 
-// TODO
+**1. St. Bernard's: The Romance of a Medical Student**
+- **Arquivo**: [St_Bernard_s_TheRomance_of_a_Medical_Student_by_Edward_Berdoe.txt](assets/textual/St_Bernard_s_TheRomance_of_a_Medical_Student_by_Edward_Berdoe.txt)
+- **Autor**: Edward Berdoe (sob pseudônimo Æsculapius Scalpel)
+- **Ano**: 1888 (4ª edição)
+- **Idioma**: Inglês
+- **Tamanho**: 542KB (9.627 linhas)
+- **Gênero**: Romance médico histórico
+- **Relevância**: Narrativa sobre a vida de estudantes de medicina, oferecendo perspectiva histórica e humana sobre a prática médica
 
-### 🏥 Origem e Características dos Textos
+**2. O Oraculo do Passado, do Presente e do Futuro (Parte 3)**
+- **Arquivo**: [O_Oraculo_do_Passado_do_presente_e_do_Futuro](assets/textual/O_Oraculo_do_Passado_do_presente_e_do_Futuro)
+- **Autor**: Bento Serrano
+- **Ano**: 1883
+- **Idioma**: Português
+- **Tamanho**: 104KB (2.736 linhas)
+- **Gênero**: Tratado médico-astrológico
+- **Relevância**: Contém "segredos úteis para a cura radical de muitas moléstias conhecidas e desconhecidas", incluindo tratamentos tradicionais
 
-Os textos foram coletados de fontes acadêmicas reais conforme especificado no enunciado, incluindo:
+### 🏥 **Origem e Características dos Textos**
 
-#### 📊 Características dos Arquivos:
+Os textos foram coletados de fontes de domínio público conforme especificado no enunciado, seguindo as diretrizes do Projeto Gutenberg:
 
-// TODO
+#### 📊 **Características dos Arquivos:**
+- **Formato**: Arquivos .txt (texto simples)
+- **Licença**: Domínio público (Creative Commons)
+- **Qualidade**: Digitalizados e processados pelo Projeto Gutenberg
+- **Acessibilidade**: Livre para uso educacional e de pesquisa
 
-#### 📋 Fontes Utilizadas:
+#### 📋 **Fontes Utilizadas:**
+- **Projeto Gutenberg**: Biblioteca digital de obras em domínio público
+- **URLs de Origem**:
+  - [St. Bernard's](https://www.gutenberg.org/ebooks/46431)
+  - [O Oraculo](https://www.gutenberg.org/ebooks/30462)
 
-// TODO
+#### 📋 **Conteúdo dos Textos:**
 
-#### 📋 Conteúdo dos Textos:
+**St. Bernard's: The Romance of a Medical Student**
+- Narrativa ficcional sobre a vida de estudantes de medicina no século XIX
+- Descreve práticas médicas, anatomia, e a evolução da medicina
+- Oferece contexto histórico sobre a formação médica
+- Contém terminologia médica e descrições de procedimentos
 
-// TODO
+**O Oraculo do Passado, do Presente e do Futuro**
+- Tratado médico-astrológico português do século XIX
+- Contém "segredos" e tratamentos tradicionais para diversas moléstias
+- Inclui receitas e procedimentos médicos da época
+- Documenta práticas médicas históricas e crenças populares
 
 ### 🤖 Aplicações em Processamento de Linguagem Natural (NLP)
 
@@ -441,7 +471,15 @@ def analyze_symptoms(text):
 
 ## 🚀 Próximas Etapas
 
-Para informações sobre as próximas etapas, consulte o arquivo [OVERVIEW.md](OVERVIEW.md).
+### **Futuras (Fases 2-7):**
+Para mais informações sobre as próximas fases do projeto CardioIA, consulte o arquivo [project/OVERVIEW.md](project/OVERVIEW.md).
+
+### **Recomendações para Expansão:**
+
+- **Ampliar Corpus Textual**: Adicionar artigos científicos do SciELO
+- **Dados Mais Recentes**: Considerar datasets cardiológicos contemporâneos
+- **Validação Clínica**: Revisão por especialistas em cardiologia
+- **Integração Multimodal**: Combinação de dados numéricos, textuais e visuais
 
 ---
 
