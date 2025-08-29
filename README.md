@@ -35,7 +35,7 @@ CardioIA/
 ## 📊 Parte 1 – Dados Numéricos (IoT)
 
 ### 📁 Arquivos de Dados
-- heart_disease_processed.xlsx 
+👉 [Dataset CSV](datasets/numeric/heart_disease_processed.xlsx)
 
 **Link público para acesso completo ao dataset:**  
 👉 [Google Drive - Dados Numéricos](https://drive.google.com/drive/folders/1MVGRajXHamQ81FYPaeWpcSY2UmrDjWy7?usp=sharing)
