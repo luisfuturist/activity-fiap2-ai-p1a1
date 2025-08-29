@@ -105,8 +105,8 @@ Essas análises são críticas para apoio a diagnósticos assistidos por IA.
 ---
 
 ## 👥 Equipe
-- Parte 1 – Dados Numéricos: [Nome do Responsável]  
-- Parte 2 – Dados Textuais: [Nome do Responsável]  
+- Parte 1 – Dados Numéricos: Gustavo Castro (RM560831) 
+- Parte 2 – Dados Textuais: Luis Emidio (RM559976)  
 - Parte 3 – Dados Visuais: [Nome do Responsável]  
 
 ---
