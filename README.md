@@ -442,14 +442,46 @@ def analyze_symptoms(text):
 
 ## 🖼️ Parte 3 - Dados Visuais (VC)
 
-### ⏳ **Status: A SER DESENVOLVIDO**
+### ✅ **Status: CONCLUÍDO**
 
-*Esta seção será preenchida pelos integrantes responsáveis pela coleta e análise de imagens médicas.*
+### 📁 **Arquivos de Dados**
 
-**Objetivos:**
-- Reunir imagens de ECGs, angiogramas, raio-X torácico
-- Preparar dados para detecção de padrões e anomalias
-- Desenvolver algoritmos de reconhecimento de imagens médicas
+#### **🔗 Link para Dados Completos (Google Drive):**
+**[🖼️ Dataset CardioIA - Dados Visuais (Angiografias)](https://drive.google.com/drive/folders/1jVCcJEcLKzIFXeW35t9XjeqihJ4S-i-i?usp=drive_link)**
+
+*Acesso público às imagens de angiografia coronária (XCA) utilizadas nesta fase do projeto.*
+
+### 🏥 **Origem dos Dados**
+
+As imagens provêm de uma seleção do dataset **Annotated X-Ray Angiography (ARCADE)**, disponível publicamente na plataforma Kaggle, e foram organizadas para este projeto.
+
+- **Fonte Original**: [Kaggle - Annotated X-Ray Angiography Dataset](https://www.kaggle.com/datasets/nikitamanaenkov/annotated-x-ray-angiography-dataset)
+- **Tipo**: Imagens reais de angiografia coronária por raios-X (XCA).
+- **Licença**: Domínio Público (CC0: Public Domain).
+
+### 📈 **Características do Dataset**
+
+- **Total de Imagens**: 100 imagens.
+- **Resolução**: 512x512 pixels.
+- **Estrutura**: O conjunto de dados foi organizado em duas categorias para tarefas de classificação:
+    1. **normal**: 50 imagens de exames sem anomalias visíveis.
+    2. **anormal**: 50 imagens de exames com diagnóstico de estenose.
+
+### 🤖 **Aplicações em Visão Computacional (VC)**
+
+Este dataset é ideal para treinar e avaliar um algoritmo de Visão Computacional para a classificação e diagnóstico automatizado em cardiologia.
+
+#### **Casos de Uso para o CardioIA:**
+
+1.  **Classificação de Exames (Normal vs. Anormal)**:
+    - **Objetivo**: Desenvolver um modelo de **Rede Neural Convolucional (CNN)** para classificar as imagens de angiografia em duas categorias: 'normal' ou 'anormal' (presença de estenose).
+    - **Impacto**: Criar um sistema de triagem automático que pode rapidamente identificar exames que necessitam de atenção de um especialista, otimizando o fluxo de trabalho e acelerando o diagnóstico.
+
+2.  **Localização de Anomalias (Exploração Futura)**:
+    - **Objetivo**: Utilizar técnicas como Mapas de Ativação de Classe (CAM) para visualizar quais áreas da imagem levaram o modelo a classificar um exame como 'anormal', oferecendo interpretabilidade ao diagnóstico da IA.
+
+#### **Importância para o Projeto:**
+A análise de imagens é um pilar da cardiologia moderna. Integrar um módulo de Visão Computacional ao **CardioIA** que possa diferenciar exames normais de anormais transforma a plataforma em uma solução de diagnóstico mais completa, combinando dados clínicos (numéricos), registros (textuais) e evidências visuais (imagens) para fornecer um suporte à decisão muito mais robusto e preciso para a equipe médica.
 
 ---
 
