@@ -38,7 +38,7 @@ CardioIA/
 - heart_disease_processed.xlsx 
 
 **Link público para acesso completo ao dataset:**  
-👉 [Google Drive / OneDrive - Dados Numéricos]([(https://drive.google.com/drive/folders/1MVGRajXHamQ81FYPaeWpcSY2UmrDjWy7?usp=sharing)])
+👉 [Google Drive - Dados Numéricos](https://drive.google.com/drive/folders/1MVGRajXHamQ81FYPaeWpcSY2UmrDjWy7?usp=sharing)
 
 ### 📌 Origem dos Dados
 Os dados foram obtidos do **UCI Machine Learning Repository**, especificamente do **Cleveland Heart Disease Database** (1988).  
