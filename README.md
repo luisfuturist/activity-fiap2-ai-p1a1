@@ -464,8 +464,8 @@ As imagens provêm de uma seleção do dataset **Annotated X-Ray Angiography (AR
 - **Total de Imagens**: 100 imagens.
 - **Resolução**: 512x512 pixels.
 - **Estrutura**: O conjunto de dados foi organizado em duas categorias para tarefas de classificação:
-    1. **normal**: 50 imagens de exames sem anomalias visíveis.
-    2. **anormal**: 50 imagens de exames com diagnóstico de estenose.
+  - **normal**: 50 imagens de exames sem anomalias visíveis.
+  - **anormal**: 50 imagens de exames com diagnóstico de estenose.
 
 ### 🤖 **Aplicações em Visão Computacional (VC)**
 
