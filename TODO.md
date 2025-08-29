@@ -24,11 +24,11 @@ Aqui estão os passos:
 
 ### 3. Dados Visuais (VC)
 
-- [ ] **Reúna no mínimo 100 imagens** (`.jpg` ou `.png`) de um tipo de exame cardiológico (ECG, raio-X, etc.).
-- [ ] **Suba as imagens** para um serviço de armazenamento público.
-- [ ] No `README.md`, **inclua o link público** para as imagens.
-- [ ] **Justifique como as imagens serão analisadas** por algoritmos de Visão Computacional (detecção de padrões, etc.).
-- [ ] **Destaque a importância** dessas análises para um projeto de IA em saúde.
+- [x] **Reúna no mínimo 100 imagens** (`.jpg` ou `.png`) de um tipo de exame cardiológico (ECG, raio-X, etc.).
+- [x] **Suba as imagens** para um serviço de armazenamento público.
+- [x] No `README.md`, **inclua o link público** para as imagens.
+- [x] **Justifique como as imagens serão analisadas** por algoritmos de Visão Computacional (detecção de padrões, etc.).
+- [x] **Destaque a importância** dessas análises para um projeto de IA em saúde.
 
 ### 4. Entregáveis Finais
 
