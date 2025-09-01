@@ -4,7 +4,7 @@
 
 ## Índice <!-- omit in toc -->
 
-- [🏥 Visão Geral do Projeto](#-visão-geral-do-projeto)
+- [Visão Geral do Projeto](#visão-geral-do-projeto)
 - [🎯 Objetivos do Projeto](#-objetivos-do-projeto)
   - [**Objetivo Geral:**](#objetivo-geral)
   - [**Objetivos Específicos:**](#objetivos-específicos)
@@ -49,7 +49,7 @@
   - [Professores](#professores)
 
 
-## 🏥 Visão Geral do Projeto
+## Visão Geral do Projeto
 
 O **CardioIA** é um projeto acadêmico inovador do curso de Inteligência Artificial da FIAP, desenvolvido como parte da **Fase 1 – Batimentos de Dados**. Este projeto simula o ecossistema de uma cardiologia moderna, integrando diferentes modalidades de dados para criar uma base sólida que alimentará futuros módulos inteligentes de IA aplicados à saúde cardiovascular.
 
