@@ -10,7 +10,7 @@
   - [**Objetivos Específicos:**](#objetivos-específicos)
   - [**Resultados Esperados:**](#resultados-esperados)
 - [Parte 1 - Dados Numéricos (IoT)](#-parte-1---dados-numéricos-iot)
-  - [📁 Arquivos de Dados](#-arquivos-de-dados)
+  - [Arquivos de Dados](#-arquivos-de-dados)
   - [Origem dos Dados](#-origem-dos-dados)
   - [Variáveis Relevantes](#-variáveis-relevantes)
 - [Parte 2 - Dados Textuais (NLP)](#-parte-2---dados-textuais-nlp)
