@@ -10,26 +10,9 @@
   - [**Objetivos Específicos:**](#objetivos-específicos)
   - [**Resultados Esperados:**](#resultados-esperados)
 - [📊 Parte 1 - Dados Numéricos (IoT)](#-parte-1---dados-numéricos-iot)
-  - [📁 **Arquivos de Dados**](#-arquivos-de-dados)
-    - [**🔗 Link para Dados Completos (Google Drive):**](#-link-para-dados-completos-google-drive)
-  - [🏥 **Origem dos Dados**](#-origem-dos-dados)
-  - [⚠️ **Considerações Importantes sobre a Idade dos Dados**](#️-considerações-importantes-sobre-a-idade-dos-dados)
-  - [📈 **Características do Dataset**](#-características-do-dataset)
-  - [🔬 **Variáveis Clínicas e Relevância para IA**](#-variáveis-clínicas-e-relevância-para-ia)
-    - [**Variáveis Demográficas**](#variáveis-demográficas)
-    - [**Variáveis de Sintomas**](#variáveis-de-sintomas)
-    - [**Variáveis Fisiológicas**](#variáveis-fisiológicas)
-    - [**Variáveis de Exames Especializados**](#variáveis-de-exames-especializados)
-    - [**Variável Target**](#variável-target)
-  - [🤖 **Aplicações em IA**](#-aplicações-em-ia)
-    - [**Algoritmos Recomendados:**](#algoritmos-recomendados)
-    - [**Casos de Uso:**](#casos-de-uso)
-  - [📊 **Qualidade e Limitações dos Dados**](#-qualidade-e-limitações-dos-dados)
-    - [**Pontos Fortes:**](#pontos-fortes)
-    - [**Limitações Importantes:**](#limitações-importantes)
-    - [**Impacto das Limitações Temporais:**](#impacto-das-limitações-temporais)
-    - [**Recomendações para Uso:**](#recomendações-para-uso)
-    - [**Alternativas de Datasets Mais Recentes:**](#alternativas-de-datasets-mais-recentes)
+  - [📁 Arquivos de Dados](#-arquivos-de-dados)
+  - [📌 Origem dos Dados](#-origem-dos-dados)
+  - [🔬 Variáveis Relevantes](#-variáveis-relevantes)
 - [📝 Parte 2 - Dados Textuais (NLP)](#-parte-2---dados-textuais-nlp)
   - [📁 **Arquivos de Dados**](#-arquivos-de-dados-1)
     - [**📄 Arquivos Coletados:**](#-arquivos-coletados)
@@ -38,9 +21,9 @@
   - [💡 **Justificativa: Por que essas análises são relevantes para IA em Saúde?**](#-justificativa-por-que-essas-análises-são-relevantes-para-ia-em-saúde)
 - [📝 Parte 3 - Dados Visuais (VC)](#-parte-3---dados-visuais-vc)
   - [📁 **Arquivos de Dados**](#-arquivos-de-dados-2)
-    - [**🔗 Link para Dados Completos (Google Drive):**](#-link-para-dados-completos-google-drive-1)
+    - [**🔗 Link para Dados Completos (Google Drive):**](#-link-para-dados-completos-google-drive)
   - [🏥 **Origem dos Dados**](#-origem-dos-dados-2)
-  - [📈 **Características do Dataset**](#-características-do-dataset-1)
+  - [📈 **Características do Dataset**](#-características-do-dataset)
   - [🤖 **Aplicações em Visão Computacional (VC)**](#-aplicações-em-visão-computacional-vc)
     - [**Casos de Uso para o CardioIA:**](#casos-de-uso-para-o-cardioia)
     - [**Importância para o Projeto:**](#importância-para-o-projeto)
@@ -89,143 +72,28 @@ Esses dados serão utilizados nas fases seguintes para:
 
 ## 📊 Parte 1 - Dados Numéricos (IoT)
 
-### 📁 **Arquivos de Dados**
+### 📁 Arquivos de Dados
+👉 [Dataset XLSX](datasets/numeric/heart_disease_processed.xlsx)
 
-#### **🔗 Link para Dados Completos (Google Drive):**
-**[📊 Dataset CardioIA - Dados Numéricos](https://drive.google.com/drive/folders/1MVGRajXHamQ81FYPaeWpcSY2UmrDjWy7?usp=drive_link)**
+**Link público para acesso completo ao dataset:**  
+👉 [Google Drive - Dados Numéricos](https://drive.google.com/drive/folders/1MVGRajXHamQ81FYPaeWpcSY2UmrDjWy7?usp=sharing)
 
-*Acesso público aos arquivos completos do projeto, incluindo datasets, planilhas, relatórios e visualizações.*
-- **Dataset Principal**: [heart_disease_processed.csv](datasets/numeric/heart_disease_processed.csv)
-- **Planilha Excel**: [dataset_doencas_cardiacas.xlsx](datasets/numeric/dataset_doencas_cardiacas.xlsx)
-- **Relatório Completo**: [relatorio_dataset_cardiaco.md](docs/relatorio_dataset_cardiaco.md)
+### 📌 Origem dos Dados
+Os dados foram obtidos do **UCI Machine Learning Repository**, especificamente do **Cleveland Heart Disease Database** (1988).  
+- Tipo: Dados clínicos reais de pacientes  
+- Fonte: Cleveland Clinic Foundation, EUA  
+- Licença: Creative Commons Attribution 4.0 International  
 
-### 🏥 **Origem dos Dados**
+### 🔬 Variáveis Relevantes
+Algumas variáveis fundamentais para análise clínica e em IA:  
+- **Idade** – fator de risco primário para doenças cardiovasculares  
+- **Sexo** – importante na diferenciação de risco precoce em homens  
+- **Pressão arterial em repouso** – indicador direto de saúde cardiovascular  
+- **Colesterol sérico** – biomarcador crítico para risco cardíaco  
+- **Frequência cardíaca máxima** – avalia capacidade funcional do coração  
+- **Doença cardíaca (target)** – variável de classificação binária  
 
-Os dados são **100% reais** e provêm do renomado **UCI Machine Learning Repository**, especificamente do **Cleveland Heart Disease Database**:
-
-- **Fonte**: Cleveland Clinic Foundation, Cleveland, Ohio, EUA
-- **Período**: 1988
-- **Tipo**: Dados clínicos reais de pacientes
-- **Validação**: Mais de 64 citações acadêmicas e 847.000 visualizações
-- **Licença**: Creative Commons Attribution 4.0 International
-- **DOI**: 10.24432/C52P4X
-
-### ⚠️ **Considerações Importantes sobre a Idade dos Dados**
-
-**Limitação Temporal (1988):**
-- **Contexto Médico**: A cardiologia evoluiu significativamente desde 1988
-- **Novos Tratamentos**: Estatinas, stents, procedimentos minimamente invasivos
-- **Tecnologia Diagnóstica**: Equipamentos mais precisos e novos biomarcadores
-- **Demografia**: Mudanças nos padrões populacionais e fatores de risco
-
-**Por que ainda é Relevante:**
-- **Fisiologia Humana**: Os fundamentos cardiovasculares permanecem os mesmos
-- **Variáveis Core**: Idade, sexo, pressão arterial, colesterol continuam sendo fatores de risco primários
-- **Padrões Básicos**: Relações entre sintomas e diagnóstico mantêm validade
-- **Benchmark Acadêmico**: Amplamente usado para comparação de algoritmos
-
-**Estratégias de Mitigação:**
-1. **Validação Cruzada**: Testar modelos em datasets mais recentes quando disponíveis
-2. **Transfer Learning**: Usar como base para fine-tuning com dados modernos
-3. **Análise Comparativa**: Comparar com estudos epidemiológicos atuais
-4. **Disclaimer Clínico**: Sempre indicar limitações temporais em aplicações práticas
-
-### 📈 **Características do Dataset**
-
-- **Total de Pacientes**: 297 registros
-- **Variáveis**: 14 características clínicas
-- **Qualidade**: Apenas 2% de valores ausentes
-- **Balanceamento**: 46% com doença cardíaca, 54% sem doença
-- **Faixa Etária**: 29-77 anos (média: 54.5 anos)
-- **Distribuição por Sexo**: 67.7% masculino, 32.3% feminino
-
-### 🔬 **Variáveis Clínicas e Relevância para IA**
-
-#### **Variáveis Demográficas**
-| Variável | Tipo | Relevância para IA |
-|----------|------|-------------------|
-| **idade** | Numérica | Forte preditor não-linear de risco cardiovascular |
-| **sexo** | Categórica | Alto poder discriminativo (homens têm maior risco prematuro) |
-
-#### **Variáveis de Sintomas**
-| Variável | Tipo | Relevância para IA |
-|----------|------|-------------------|
-| **tipo_dor_peito** | Categórica | Feature ordinal com alta correlação diagnóstica |
-| **angina_exercicio** | Binária | Indicador direto de isquemia miocárdica |
-
-#### **Variáveis Fisiológicas**
-| Variável | Tipo | Relevância para IA |
-|----------|------|-------------------|
-| **pressao_arterial_repouso** | Numérica | Relação não-linear com risco cardiovascular |
-| **colesterol** | Numérica | Biomarcador quantitativo essencial |
-| **freq_cardiaca_max** | Numérica | Indicador de capacidade cardiovascular |
-| **glicemia_jejum** | Binária | Fator de risco metabólico |
-
-#### **Variáveis de Exames Especializados**
-| Variável | Tipo | Relevância para IA |
-|----------|------|-------------------|
-| **ecg_repouso** | Categórica | Detecta anormalidades elétricas cardíacas |
-| **depressao_st** | Numérica | Altamente específica para isquemia |
-| **inclinacao_st** | Ordinal | Complementa depressão ST com info morfológica |
-| **vasos_principais** | Ordinal | Quantifica extensão da doença |
-| **talassemia** | Categórica | Teste de perfusão miocárdica especializado |
-
-#### **Variável Target**
-| Variável | Tipo | Relevância para IA |
-|----------|------|-------------------|
-| **doenca_cardiaca** | Binária | Target para classificação supervisionada |
-
-### 🤖 **Aplicações em IA**
-
-#### **Algoritmos Recomendados:**
-- **Random Forest**: Ideal para features mistas (categóricas + numéricas)
-- **Gradient Boosting**: Excelente para padrões não-lineares complexos
-- **SVM**: Eficaz para classificação binária com features normalizadas
-- **Neural Networks**: Captura interações complexas entre variáveis
-- **Logistic Regression**: Interpretável para validação clínica
-
-#### **Casos de Uso:**
-1. **Diagnóstico Assistido**: Predição de risco de doença cardíaca
-2. **Triagem Inteligente**: Priorização de pacientes por risco
-3. **Medicina Preventiva**: Identificação de fatores de risco modificáveis
-4. **Análise Epidemiológica**: Padrões populacionais de doenças cardíacas
-
-### 📊 **Qualidade e Limitações dos Dados**
-
-#### **Pontos Fortes:**
-- ✅ **Dados Reais**: Coletados em ambiente clínico real
-- ✅ **Padrão-Ouro**: Diagnóstico baseado em angiografia
-- ✅ **Completude**: Apenas 2% de valores ausentes
-- ✅ **Balanceamento**: 46% positivos, 54% negativos
-- ✅ **Diversidade**: Ampla faixa etária e ambos os sexos
-- ✅ **Validação Acadêmica**: Amplamente utilizado na literatura científica
-
-#### **Limitações Importantes:**
-- ⚠️ **Idade dos Dados**: Coletados em 1988 (37 anos atrás)
-- ⚠️ **Evolução Médica**: Medicina cardiovascular evoluiu significativamente
-- ⚠️ **População Específica**: Principalmente caucasiana (Cleveland, EUA)
-- ⚠️ **Tamanho Limitado**: 297 registros (adequado para proof-of-concept)
-- ⚠️ **Contexto Tecnológico**: Equipamentos e protocolos diagnósticos desatualizados
-
-#### **Impacto das Limitações Temporais:**
-1. **Tratamentos**: Estatinas, stents e terapias modernas não existiam
-2. **Diagnóstico**: Tecnologia de imagem e biomarcadores mais limitados
-3. **Demografia**: Padrões populacionais de risco podem ter mudado
-4. **Estilo de Vida**: Fatores como sedentarismo e dieta evoluíram
-
-#### **Recomendações para Uso:**
-- 🎯 **Fins Educacionais**: Excelente para aprender conceitos de ML em saúde
-- 🎯 **Prototipagem**: Ideal para desenvolver e testar algoritmos
-- 🎯 **Benchmark**: Comparação com outros métodos de ML
-- ⚠️ **Aplicação Clínica**: Requer validação com dados contemporâneos
-
-#### **Alternativas de Datasets Mais Recentes:**
-Para projetos que exigem dados mais atuais, considere:
-- **Framingham Heart Study**: Dados longitudinais mais recentes
-- **MIMIC-III/IV**: Dados hospitalares modernos (requer autorização)
-- **UK Biobank**: Grande coorte populacional contemporânea
-- **Kaggle Heart Disease**: Compilações de datasets mais recentes
-- **Dados Sintéticos**: Geração de dados baseada em distribuições modernas
+Essas variáveis são essenciais para construir modelos de predição e triagem inteligente em cardiologia.
 
 ## 📝 Parte 2 - Dados Textuais (NLP)
 
