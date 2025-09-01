@@ -137,7 +137,7 @@ Os textos coletados podem ser analisados por técnicas de Processamento de Lingu
 
 Essas análises permitem transformar textos médicos longos e complexos em dados estruturados, prontos para serem usados em sistemas de apoio à decisão, pesquisas ou automação de processos clínicos.
 
-### 💡 **Justificativa: Por que essas análises são relevantes para IA em Saúde?**
+### **Justificativa: Por que essas análises são relevantes para IA em Saúde?**
 
 A aplicação de técnicas de NLP (Processamento de Linguagem Natural) em textos médicos é fundamental para projetos de Inteligência Artificial na área da saúde, pois:
 
@@ -154,7 +154,7 @@ Em resumo, essas análises potencializam a eficiência, a precisão e a inovaç�
 
 ### **Arquivos de Dados**
 
-#### **🔗 Link para Dados Completos (Google Drive):**
+#### **Link para Dados Completos (Google Drive):**
 **[Dataset CardioIA - Dados Visuais (Angiografias)](https://drive.google.com/drive/folders/1jVCcJEcLKzIFXeW35t9XjeqihJ4S-i-i?usp=drive_link)**
 
 *Acesso público às imagens de angiografia coronária (XCA) utilizadas nesta fase do projeto.*
