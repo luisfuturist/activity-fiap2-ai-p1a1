@@ -5,26 +5,26 @@
 ## Índice <!-- omit in toc -->
 
 - [Visão Geral do Projeto](#visão-geral-do-projeto)
-- [🎯 Objetivos do Projeto](#-objetivos-do-projeto)
+- [Objetivos do Projeto](#-objetivos-do-projeto)
   - [**Objetivo Geral:**](#objetivo-geral)
   - [**Objetivos Específicos:**](#objetivos-específicos)
   - [**Resultados Esperados:**](#resultados-esperados)
-- [📊 Parte 1 - Dados Numéricos (IoT)](#-parte-1---dados-numéricos-iot)
+- [Parte 1 - Dados Numéricos (IoT)](#-parte-1---dados-numéricos-iot)
   - [📁 Arquivos de Dados](#-arquivos-de-dados)
-  - [📌 Origem dos Dados](#-origem-dos-dados)
-  - [🔬 Variáveis Relevantes](#-variáveis-relevantes)
-- [📝 Parte 2 - Dados Textuais (NLP)](#-parte-2---dados-textuais-nlp)
-  - [📁 **Arquivos de Dados**](#-arquivos-de-dados-1)
-    - [**📄 Arquivos Coletados:**](#-arquivos-coletados)
-  - [🏥 **Origem dos Dados**](#-origem-dos-dados-1)
-  - [🤖 **Como os textos podem ser analisados por NLP**](#-como-os-textos-podem-ser-analisados-por-nlp)
-  - [💡 **Justificativa: Por que essas análises são relevantes para IA em Saúde?**](#-justificativa-por-que-essas-análises-são-relevantes-para-ia-em-saúde)
-- [📝 Parte 3 - Dados Visuais (VC)](#-parte-3---dados-visuais-vc)
-  - [📁 **Arquivos de Dados**](#-arquivos-de-dados-2)
-    - [**🔗 Link para Dados Completos (Google Drive):**](#-link-para-dados-completos-google-drive)
-  - [🏥 **Origem dos Dados**](#-origem-dos-dados-2)
-  - [📈 **Características do Dataset**](#-características-do-dataset)
-  - [🤖 **Aplicações em Visão Computacional (VC)**](#-aplicações-em-visão-computacional-vc)
+  - [Origem dos Dados](#-origem-dos-dados)
+  - [Variáveis Relevantes](#-variáveis-relevantes)
+- [Parte 2 - Dados Textuais (NLP)](#-parte-2---dados-textuais-nlp)
+  - [**Arquivos de Dados**](#-arquivos-de-dados-1)
+    - [**Arquivos Coletados:**](#-arquivos-coletados)
+  - [**Origem dos Dados**](#-origem-dos-dados-1)
+  - [**Como os textos podem ser analisados por NLP**](#-como-os-textos-podem-ser-analisados-por-nlp)
+  - [**Justificativa: Por que essas análises são relevantes para IA em Saúde?**](#-justificativa-por-que-essas-análises-são-relevantes-para-ia-em-saúde)
+- [Parte 3 - Dados Visuais (VC)](#-parte-3---dados-visuais-vc)
+  - [**Arquivos de Dados**](#-arquivos-de-dados-2)
+    - [**Link para Dados Completos (Google Drive):**](#-link-para-dados-completos-google-drive)
+  - [**Origem dos Dados**](#-origem-dos-dados-2)
+  - [**Características do Dataset**](#-características-do-dataset)
+  - [**Aplicações em Visão Computacional (VC)**](#-aplicações-em-visão-computacional-vc)
     - [**Casos de Uso para o CardioIA:**](#casos-de-uso-para-o-cardioia)
     - [**Importância para o Projeto:**](#importância-para-o-projeto)
 - [Equipe](#equipe)
@@ -38,24 +38,24 @@ O **CardioIA** é um projeto acadêmico inovador do curso de Inteligência Artif
 
 Como cientistas de dados hospitalares, nossa missão nesta fase é levantar, organizar e compreender dados cardiológicos que serão fundamentais para o desenvolvimento de algoritmos de machine learning, visão computacional e processamento de linguagem natural. O projeto é construído com foco na **Governança de Dados** e na mitigação de viés em sistemas inteligentes, preparando o terreno para as próximas fases que incluirão modelos de ML, agentes inteligentes e soluções de diagnóstico assistido.
 
-## 🎯 Objetivos do Projeto
+## Objetivos do Projeto
 
 ### **Objetivo Geral:**
 Construir uma base sólida de dados cardiológicos em três modalidades essenciais para projetos de IA em saúde, demonstrando competência na coleta, organização e preparação de dados clínicos.
 
 ### **Objetivos Específicos:**
 
-1. **📊 Dados Numéricos (IoT)**: 
+1. **Dados Numéricos (IoT)**: 
    - Coletar e organizar dataset clínico com variáveis cardiológicas relevantes
    - Demonstrar compreensão da origem e qualidade dos dados médicos
    - Identificar variáveis clinicamente significativas para algoritmos de IA
 
-2. **📝 Dados Textuais (NLP)**: 
+2. **Dados Textuais (NLP)**: 
    - Reunir literatura médica e textos científicos sobre saúde cardiovascular
    - Explicar como técnicas de NLP podem extrair conhecimento desses textos
    - Justificar a relevância da análise textual para projetos de IA em saúde
 
-3. **🖼️ Dados Visuais (VC)**: 
+3. **Dados Visuais (VC)**: 
    - Coletar imagens de exames cardiológicos para análise computacional
    - Demonstrar compreensão das aplicações de visão computacional em cardiologia
    - Preparar base visual para treinamento de modelos de classificação médica
@@ -70,21 +70,21 @@ Esses dados serão utilizados nas fases seguintes para:
 
 ---
 
-## 📊 Parte 1 - Dados Numéricos (IoT)
+## Parte 1 - Dados Numéricos (IoT)
 
-### 📁 Arquivos de Dados
-👉 [Dataset XLSX](datasets/numeric/heart_disease_processed.xlsx)
+### Arquivos de Dados
+[Dataset XLSX](datasets/numeric/heart_disease_processed.xlsx)
 
 **Link público para acesso completo ao dataset:**  
-👉 [Google Drive - Dados Numéricos](https://drive.google.com/drive/folders/1MVGRajXHamQ81FYPaeWpcSY2UmrDjWy7?usp=sharing)
+[Google Drive - Dados Numéricos](https://drive.google.com/drive/folders/1MVGRajXHamQ81FYPaeWpcSY2UmrDjWy7?usp=sharing)
 
-### 📌 Origem dos Dados
+### Origem dos Dados
 Os dados foram obtidos do **UCI Machine Learning Repository**, especificamente do **Cleveland Heart Disease Database** (1988).  
 - Tipo: Dados clínicos reais de pacientes  
 - Fonte: Cleveland Clinic Foundation, EUA  
 - Licença: Creative Commons Attribution 4.0 International  
 
-### 🔬 Variáveis Relevantes
+### Variáveis Relevantes
 Algumas variáveis fundamentais para análise clínica e em IA:  
 - **Idade** – fator de risco primário para doenças cardiovasculares  
 - **Sexo** – importante na diferenciação de risco precoce em homens  
@@ -95,11 +95,11 @@ Algumas variáveis fundamentais para análise clínica e em IA:
 
 Essas variáveis são essenciais para construir modelos de predição e triagem inteligente em cardiologia.
 
-## 📝 Parte 2 - Dados Textuais (NLP)
+## Parte 2 - Dados Textuais (NLP)
 
-### 📁 **Arquivos de Dados**
+### **Arquivos de Dados**
 
-#### **📄 Arquivos Coletados:**
+#### **Arquivos Coletados:**
 
 1. **FhdvV9qsmPbL4KFfMqwtNBv_extracted.txt** (13KB, 258 linhas)
    - **Título**: "Coronavírus e o Coração | Um Relato de Caso sobre a Evolução da COVID-19 Associado à Evolução Cardiológica"
@@ -116,7 +116,7 @@ Essas variáveis são essenciais para construir modelos de predição e triagem 
 > [!NOTE]
 > O download dos textos foi realizado utilizando o script [nlp_data_download.py](scripts/nlp_data_download.py). Para mais informações sobre o download dos textos, [leia aqui](lib/pdfurl2text/README.md).
 
-### 🏥 **Origem dos Dados**
+### **Origem dos Dados**
 
 Os textos foram coletados de fontes científicas de alta qualidade:
 
@@ -125,7 +125,7 @@ Os textos foram coletados de fontes científicas de alta qualidade:
 - **Licença**: Acesso aberto para fins educacionais e de pesquisa
 - **Qualidade**: Artigos revisados por pares e publicados em revista indexada
 
-### 🤖 **Como os textos podem ser analisados por NLP**
+### **Como os textos podem ser analisados por NLP**
 
 Os textos coletados podem ser analisados por técnicas de Processamento de Linguagem Natural (NLP) de diversas formas, tornando possível extrair informações valiosas automaticamente. Veja alguns exemplos práticos:
 
@@ -150,16 +150,16 @@ A aplicação de técnicas de NLP (Processamento de Linguagem Natural) em textos
 
 Em resumo, essas análises potencializam a eficiência, a precisão e a inovação em projetos de IA aplicados à saúde, promovendo melhores resultados clínicos e avanços científicos.
 
-## 📝 Parte 3 - Dados Visuais (VC)
+## Parte 3 - Dados Visuais (VC)
 
-### 📁 **Arquivos de Dados**
+### **Arquivos de Dados**
 
 #### **🔗 Link para Dados Completos (Google Drive):**
-**[🖼️ Dataset CardioIA - Dados Visuais (Angiografias)](https://drive.google.com/drive/folders/1jVCcJEcLKzIFXeW35t9XjeqihJ4S-i-i?usp=drive_link)**
+**[Dataset CardioIA - Dados Visuais (Angiografias)](https://drive.google.com/drive/folders/1jVCcJEcLKzIFXeW35t9XjeqihJ4S-i-i?usp=drive_link)**
 
 *Acesso público às imagens de angiografia coronária (XCA) utilizadas nesta fase do projeto.*
 
-### 🏥 **Origem dos Dados**
+### **Origem dos Dados**
 
 As imagens provêm de uma seleção do dataset **Annotated X-Ray Angiography (ARCADE)**, disponível publicamente na plataforma Kaggle, e foram organizadas para este projeto.
 
@@ -167,7 +167,7 @@ As imagens provêm de uma seleção do dataset **Annotated X-Ray Angiography (AR
 - **Tipo**: Imagens reais de angiografia coronária por raios-X (XCA).
 - **Licença**: Domínio Público (CC0: Public Domain).
 
-### 📈 **Características do Dataset**
+### **Características do Dataset**
 
 - **Total de Imagens**: 100 imagens.
 - **Resolução**: 512x512 pixels.
@@ -175,7 +175,7 @@ As imagens provêm de uma seleção do dataset **Annotated X-Ray Angiography (AR
   - **normal**: 50 imagens de exames sem anomalias visíveis.
   - **anormal**: 50 imagens de exames com diagnóstico de estenose.
 
-### 🤖 **Aplicações em Visão Computacional (VC)**
+### **Aplicações em Visão Computacional (VC)**
 
 Este dataset é ideal para treinar e avaliar um algoritmo de Visão Computacional para a classificação e diagnóstico automatizado em cardiologia.
 
