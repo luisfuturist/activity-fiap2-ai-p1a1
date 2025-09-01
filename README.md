@@ -1,5 +1,46 @@
 # CardioIA - Sistema Inteligente de Cardiologia
 
+- [CardioIA - Sistema Inteligente de Cardiologia](#cardioia---sistema-inteligente-de-cardiologia)
+  - [🏥 Visão Geral do Projeto](#-visão-geral-do-projeto)
+  - [🎯 Objetivos do Projeto](#-objetivos-do-projeto)
+  - [📊 Parte 1 - Dados Numéricos (IoT)](#-parte-1---dados-numéricos-iot)
+    - [📁 **Arquivos de Dados**](#-arquivos-de-dados)
+      - [**🔗 Link para Dados Completos (Google Drive):**](#-link-para-dados-completos-google-drive)
+    - [🏥 **Origem dos Dados**](#-origem-dos-dados)
+    - [⚠️ **Considerações Importantes sobre a Idade dos Dados**](#️-considerações-importantes-sobre-a-idade-dos-dados)
+    - [📈 **Características do Dataset**](#-características-do-dataset)
+    - [🔬 **Variáveis Clínicas e Relevância para IA**](#-variáveis-clínicas-e-relevância-para-ia)
+      - [**Variáveis Demográficas**](#variáveis-demográficas)
+      - [**Variáveis de Sintomas**](#variáveis-de-sintomas)
+      - [**Variáveis Fisiológicas**](#variáveis-fisiológicas)
+      - [**Variáveis de Exames Especializados**](#variáveis-de-exames-especializados)
+      - [**Variável Target**](#variável-target)
+    - [🤖 **Aplicações em IA**](#-aplicações-em-ia)
+      - [**Algoritmos Recomendados:**](#algoritmos-recomendados)
+      - [**Casos de Uso:**](#casos-de-uso)
+    - [📊 **Qualidade e Limitações dos Dados**](#-qualidade-e-limitações-dos-dados)
+      - [**Pontos Fortes:**](#pontos-fortes)
+      - [**Limitações Importantes:**](#limitações-importantes)
+      - [**Impacto das Limitações Temporais:**](#impacto-das-limitações-temporais)
+      - [**Recomendações para Uso:**](#recomendações-para-uso)
+      - [**Alternativas de Datasets Mais Recentes:**](#alternativas-de-datasets-mais-recentes)
+  - [📝 Parte 2 - Dados Textuais (NLP)](#-parte-2---dados-textuais-nlp)
+    - [📁 **Arquivos de Dados**](#-arquivos-de-dados-1)
+      - [**📄 Arquivos Coletados:**](#-arquivos-coletados)
+    - [🏥 **Origem dos Dados**](#-origem-dos-dados-1)
+    - [🤖 **Como os textos podem ser analisados por NLP**](#-como-os-textos-podem-ser-analisados-por-nlp)
+    - [💡 **Justificativa: Por que essas análises são relevantes para IA em Saúde?**](#-justificativa-por-que-essas-análises-são-relevantes-para-ia-em-saúde)
+  - [📝 Parte 3 - Dados Visuais (VC)](#-parte-3---dados-visuais-vc)
+    - [📁 **Arquivos de Dados**](#-arquivos-de-dados-2)
+      - [**🔗 Link para Dados Completos (Google Drive):**](#-link-para-dados-completos-google-drive-1)
+    - [🏥 **Origem dos Dados**](#-origem-dos-dados-2)
+    - [📈 **Características do Dataset**](#-características-do-dataset-1)
+    - [🤖 **Aplicações em Visão Computacional (VC)**](#-aplicações-em-visão-computacional-vc)
+      - [**Casos de Uso para o CardioIA:**](#casos-de-uso-para-o-cardioia)
+      - [**Importância para o Projeto:**](#importância-para-o-projeto)
+  - [👥 Equipe](#-equipe)
+
+
 ## 🏥 Visão Geral do Projeto
 
 O **CardioIA** é um projeto de sistema inteligente voltado para a área de cardiologia, desenvolvido como parte da **Fase 1 – Batimentos de Dados**. O objetivo é construir um ecossistema de dados que alimentará módulos inteligentes de Inteligência Artificial aplicados à saúde cardiovascular.
@@ -217,6 +258,8 @@ A aplicação de técnicas de NLP (Processamento de Linguagem Natural) em textos
 - **Melhora a qualidade dos dados:** A padronização e extração de informações relevantes contribuem para bases de dados mais completas e confiáveis.
 
 Em resumo, essas análises potencializam a eficiência, a precisão e a inovação em projetos de IA aplicados à saúde, promovendo melhores resultados clínicos e avanços científicos.
+
+## 📝 Parte 3 - Dados Visuais (VC)
 
 ### 📁 **Arquivos de Dados**
 
