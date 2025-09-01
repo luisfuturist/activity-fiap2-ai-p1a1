@@ -1,5 +1,7 @@
 # CardioIA - Sistema Inteligente de Cardiologia <!-- omit in toc -->
 
+> Este projeto faz parte do curso de **Inteligência Artificial** da [FIAP](https://github.com/fiap) - Online 2024. Este repositório é a atividade "**Ano 2 - Fase 1** - Batimentos de Dados".
+
 ## Índice <!-- omit in toc -->
 
 - [🏥 Visão Geral do Projeto](#-visão-geral-do-projeto)
@@ -42,7 +44,9 @@
   - [🤖 **Aplicações em Visão Computacional (VC)**](#-aplicações-em-visão-computacional-vc)
     - [**Casos de Uso para o CardioIA:**](#casos-de-uso-para-o-cardioia)
     - [**Importância para o Projeto:**](#importância-para-o-projeto)
-- [👥 Equipe](#-equipe)
+- [Equipe](#equipe)
+  - [Membros](#membros)
+  - [Professores](#professores)
 
 
 ## 🏥 Visão Geral do Projeto
@@ -321,14 +325,19 @@ A análise de imagens é um pilar da cardiologia moderna. Integrar um módulo de
 
 ---
 
-## 👥 Equipe
+## Equipe
+
+### Membros
 
 - Gustavo Castro (RM560831)
 - Luis Emidio (RM559976)
 - Matheus Conciani (RM559473) 
 
----
+### Professores
 
-**Projeto desenvolvido para FIAP AI 2025 - Fase 1: Batimentos de Dados**  
+- **Tutor**: [Leonardo Ruiz Orabona](https://www.linkedin.com/in/leonardoorabona/)  
+- **Coordenador**: [André Godoi](https://www.linkedin.com/in/profandregodoi/)  
+
+---
 
 [LICENSE.md](LICENSE.md)
