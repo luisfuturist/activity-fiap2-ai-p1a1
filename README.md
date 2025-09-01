@@ -15,32 +15,15 @@ Desenvolver uma base sólida de dados cardiológicos em três modalidades:
 3. **🖼️ Dados Visuais (VC)**: Imagens de exames cardiológicos
 
 Esses dados serão utilizados nas fases seguintes para:
+
 - Treinar modelos de machine learning
 - Desenvolver algoritmos de diagnóstico assistido
 - Realizar análises comparativas e preditivas
 - Gerar soluções inovadoras para cardiologia
 
-## 📋 Estrutura do Projeto
-
-```
-CardioIA/
-├── README.md
-├── datasets/
-│   ├── numeric/
-│   │   ├── heart_disease_processed.csv
-│   │   └── dataset_doencas_cardiacas.xlsx
-│   └── visual/
-│       └── [A ser desenvolvido pelos integrantes]
-└── assets/
-    └── textual/
-        └── [Documentação adicional]
-```
-
 ---
 
 ## 📊 Parte 1 - Dados Numéricos (IoT)
-
-### ✅ **Status: CONCLUÍDO**
 
 ### 📁 **Arquivos de Dados**
 
@@ -180,269 +163,60 @@ Para projetos que exigem dados mais atuais, considere:
 - **Kaggle Heart Disease**: Compilações de datasets mais recentes
 - **Dados Sintéticos**: Geração de dados baseada em distribuições modernas
 
----
-
 ## 📝 Parte 2 - Dados Textuais (NLP)
 
-### 📚 **Pesquisa de Dados NLP Cardíacos**
+### 📁 **Arquivos de Dados**
 
-A pesquisa realizada sobre dados NLP cardíacos está disponível em 3 formatos:
+#### **📄 Arquivos Coletados:**
 
-- [PDF](research/Pesquisa_de_Dados_NLP_Cardiacos.pdf)
-- [Markdown](research/Pesquisa_de_Dados_NLP_Cardiacos.md)
-- [Google Docs](https://docs.google.com/document/d/1VWUvAUArbplo_Hc-aQJ_L6XYFMTIYwAIe_UNLfuX28Y)
+1. **FhdvV9qsmPbL4KFfMqwtNBv_extracted.txt** (13KB, 258 linhas)
+   - **Título**: "Coronavírus e o Coração | Um Relato de Caso sobre a Evolução da COVID-19 Associado à Evolução Cardiológica"
+   - **Fonte**: Arquivos Brasileiros de Cardiologia (Arq Bras Cardiol)
+   - **Conteúdo**: Relato de caso de paciente diabético com COVID-19 que evoluiu com complicações cardíacas
+   - **Relevância**: Demonstra a interação entre doenças infecciosas e cardiovasculares
 
-### 📁 **Arquivos de Dados Textuais**
+2. **K9Ns38vDyW3qXDkJSQj56Jk_extracted.txt** (25KB, 418 linhas)
+   - **Título**: "Relato de Caso de Doença Coronariana e Vascular Não Aterosclerótica: Em Busca de uma Entidade Clínica Rara"
+   - **Fonte**: Arquivos Brasileiros de Cardiologia (Arq Bras Cardiol)
+   - **Conteúdo**: Caso de doença relacionada à imunoglobulina G4 (IgG4-RD) com manifestação cardiovascular rara
+   - **Relevância**: Apresenta diagnóstico complexo de condição sistêmica rara com envolvimento cardíaco
 
-#### 📚 **Textos Coletados do Projeto Gutenberg:**
+> [!NOTE]
+> O download dos textos foi realizado utilizando o script [nlp_data_download.py](scripts/nlp_data_download.py). Para mais informações sobre o download dos textos, [leia aqui](lib/pdfurl2text/README.md).
 
-**1. St. Bernard's: The Romance of a Medical Student**
-- **Arquivo**: [St_Bernard_s_TheRomance_of_a_Medical_Student_by_Edward_Berdoe.txt](assets/textual/St_Bernard_s_TheRomance_of_a_Medical_Student_by_Edward_Berdoe.txt)
-- **Autor**: Edward Berdoe (sob pseudônimo Æsculapius Scalpel)
-- **Ano**: 1888 (4ª edição)
-- **Idioma**: Inglês
-- **Tamanho**: 542KB (9.627 linhas)
-- **Gênero**: Romance médico histórico
-- **Relevância**: Narrativa sobre a vida de estudantes de medicina, oferecendo perspectiva histórica e humana sobre a prática médica
+### 🏥 **Origem dos Dados**
 
-**2. O Oraculo do Passado, do Presente e do Futuro (Parte 3)**
-- **Arquivo**: [O_Oraculo_do_Passado_do_presente_e_do_Futuro](assets/textual/O_Oraculo_do_Passado_do_presente_e_do_Futuro)
-- **Autor**: Bento Serrano
-- **Ano**: 1883
-- **Idioma**: Português
-- **Tamanho**: 104KB (2.736 linhas)
-- **Gênero**: Tratado médico-astrológico
-- **Relevância**: Contém "segredos úteis para a cura radical de muitas moléstias conhecidas e desconhecidas", incluindo tratamentos tradicionais
+Os textos foram coletados de fontes científicas de alta qualidade:
 
-### 🏥 **Origem e Características dos Textos**
+- **SciELO (Scientific Electronic Library Online)**: Biblioteca digital de acesso aberto
+- **Arquivos Brasileiros de Cardiologia**: Revista científica da Sociedade Brasileira de Cardiologia
+- **Licença**: Acesso aberto para fins educacionais e de pesquisa
+- **Qualidade**: Artigos revisados por pares e publicados em revista indexada
 
-Os textos foram coletados de fontes de domínio público conforme especificado no enunciado, seguindo as diretrizes do Projeto Gutenberg:
+### 🤖 **Como os textos podem ser analisados por NLP**
 
-#### 📊 **Características dos Arquivos:**
-- **Formato**: Arquivos .txt (texto simples)
-- **Licença**: Domínio público (Creative Commons)
-- **Qualidade**: Digitalizados e processados pelo Projeto Gutenberg
-- **Acessibilidade**: Livre para uso educacional e de pesquisa
+Os textos coletados podem ser analisados por técnicas de Processamento de Linguagem Natural (NLP) de diversas formas, tornando possível extrair informações valiosas automaticamente. Veja alguns exemplos práticos:
 
-#### 📋 **Fontes Utilizadas:**
-- **Projeto Gutenberg**: Biblioteca digital de obras em domínio público
-- **URLs de Origem**:
-  - [St. Bernard's](https://www.gutenberg.org/ebooks/46431)
-  - [O Oraculo](https://www.gutenberg.org/ebooks/30462)
+- **Identificação de sintomas e diagnósticos:** O algoritmo pode "ler" o texto e encontrar menções a sintomas (como dor no peito, febre, falta de ar) e diagnósticos médicos, destacando essas informações de forma estruturada.
+- **Classificação do conteúdo:** É possível separar os textos por temas, como tipo de doença, gravidade do caso ou especialidade médica, facilitando a organização e busca por casos semelhantes.
+- **Análise de sentimentos e tom clínico:** O NLP pode avaliar se o relato descreve um caso grave, urgente ou estável, ajudando a priorizar atendimentos ou identificar situações críticas rapidamente.
+- **Extração de dados para tabelas:** Informações como idade, sexo, exames realizados e resultados podem ser extraídas automaticamente dos textos e organizadas em tabelas para análise posterior.
+- **Resumo automático:** Algoritmos podem gerar resumos dos textos, facilitando a leitura rápida por profissionais de saúde.
 
-#### 📋 **Conteúdo dos Textos:**
+Essas análises permitem transformar textos médicos longos e complexos em dados estruturados, prontos para serem usados em sistemas de apoio à decisão, pesquisas ou automação de processos clínicos.
 
-**St. Bernard's: The Romance of a Medical Student**
-- Narrativa ficcional sobre a vida de estudantes de medicina no século XIX
-- Descreve práticas médicas, anatomia, e a evolução da medicina
-- Oferece contexto histórico sobre a formação médica
-- Contém terminologia médica e descrições de procedimentos
+### 💡 **Justificativa: Por que essas análises são relevantes para IA em Saúde?**
 
-**O Oraculo do Passado, do Presente e do Futuro**
-- Tratado médico-astrológico português do século XIX
-- Contém "segredos" e tratamentos tradicionais para diversas moléstias
-- Inclui receitas e procedimentos médicos da época
-- Documenta práticas médicas históricas e crenças populares
+A aplicação de técnicas de NLP (Processamento de Linguagem Natural) em textos médicos é fundamental para projetos de Inteligência Artificial na área da saúde, pois:
 
-### 🤖 Aplicações em Processamento de Linguagem Natural (NLP)
+- **Automatiza a triagem de casos:** Algoritmos podem identificar rapidamente relatos críticos ou urgentes, priorizando o atendimento de pacientes de maior risco.
+- **Apoia o diagnóstico clínico:** A extração automática de sintomas, sinais e diagnósticos auxilia médicos na tomada de decisão, reduzindo erros e acelerando o processo.
+- **Organiza e estrutura prontuários:** A classificação e extração de informações transforma textos não estruturados em dados organizados, facilitando buscas e análises posteriores.
+- **Identifica padrões clínicos e epidemiológicos:** O agrupamento e análise de grandes volumes de textos permite detectar tendências, fatores de risco e novas associações clínicas.
+- **Acelera pesquisas e descobertas:** O processamento automatizado de literatura médica e relatos de casos amplia a capacidade de revisão e atualização científica.
+- **Melhora a qualidade dos dados:** A padronização e extração de informações relevantes contribuem para bases de dados mais completas e confiáveis.
 
-#### 🔍 **Como os Textos Podem Ser Analisados por Algoritmos de NLP:**
-
-Os textos coletados podem ser processados por diferentes técnicas de NLP para extrair informações valiosas para o projeto CardioIA:
-
-##### 1. **Reconhecimento de Entidades Nomeadas (NER) - Extração de Sintomas e Sinais:**
-
-```python
-# Exemplo de extração de sintomas cardíacos dos textos
-cardiac_symptoms = [
-    "dor torácica", "dispneia", "palpitações", 
-    "síncope", "edema", "fadiga", "sudorese",
-    "tontura", "ansiedade", "nervosismo"
-]
-
-# Aplicação: Identificar automaticamente sintomas em prontuários
-def extract_symptoms(text):
-    symptoms = []
-    for symptom in cardiac_symptoms:
-        if symptom.lower() in text.lower():
-            symptoms.append(symptom)
-    return symptoms
-```
-
-**Relevância**: Permite triagem automática de pacientes baseada em sintomas descritos, agilizando o processo de atendimento e priorização de casos.
-
-##### 2. **Identificação de Fatores de Risco:**
-
-- **Hipertensão arterial**: Detecção de valores pressóricos e termos relacionados
-- **Diabetes mellitus**: Identificação de critérios diagnósticos e complicações
-- **Dislipidemia**: Níveis de colesterol e triglicerídeos mencionados
-- **Tabagismo**: Hábitos de fumo e programas de cessação
-- **Obesidade**: IMC e circunferência abdominal
-
-**Relevância**: Facilita a identificação automática de pacientes de alto risco cardiovascular, permitindo intervenções preventivas.
-
-##### 3. **Classificação de Doenças Cardiovasculares:**
-
-- **Doença arterial coronariana**: Termos como "estenose", "angina", "infarto"
-- **Insuficiência cardíaca**: "edema", "dispneia", "fadiga"
-- **Valvulopatias**: "estenose mitral", "insuficiência aórtica"
-- **Arritmias cardíacas**: "fibrilação atrial", "taquicardia"
-- **Acidente vascular cerebral**: "AVC", "isquemia cerebral"
-
-**Relevância**: Permite categorização automática de prontuários e direcionamento para especialistas apropriados.
-
-##### 4. **Análise de Sentimentos em Textos Médicos:**
-
-- **Urgência**: Identificação de situações emergenciais ("dor intensa", "falta de ar súbita")
-- **Gravidade**: Classificação da severidade das condições ("estável", "crítico")
-- **Prognóstico**: Análise de expectativas de evolução ("favorável", "reservado")
-
-**Relevância**: Ajuda na priorização de atendimentos e identificação de casos que requerem intervenção imediata.
-
-##### 5. **Extração de Relacionamentos Médicos:**
-
-- **Sintoma → Doença**: Mapeamento de manifestações clínicas com diagnósticos
-- **Fator de Risco → Complicação**: Relações causais entre condições
-- **Tratamento → Eficácia**: Resultados terapêuticos e respostas ao tratamento
-
-**Relevância**: Construção de bases de conhecimento médico para suporte à decisão clínica.
-
-#### 🎯 **Importância das Análises de NLP para o Projeto CardioIA:**
-
-As análises de NLP são fundamentais para o sucesso do projeto CardioIA pelos seguintes motivos:
-
-##### **1. Transformação de Dados Não Estruturados em Informação Acionável:**
-- **Problema**: 80% dos dados médicos estão em formato textual não estruturado
-- **Solução**: NLP converte prontuários, relatórios e literatura em dados estruturados
-- **Impacto**: Permite análise quantitativa de informações qualitativas
-
-##### **2. Automação de Processos Clínicos:**
-- **Triagem Inteligente**: Identificação automática de sintomas e priorização de casos
-- **Diagnóstico Assistido**: Sugestões baseadas em padrões textuais
-- **Monitoramento Contínuo**: Análise de evolução clínica através de textos
-
-##### **3. Redução de Erros Médicos:**
-- **Padronização**: Eliminação de variações na terminologia médica
-- **Validação**: Verificação automática de consistência em prontuários
-- **Alertas**: Identificação de informações contraditórias ou ausentes
-
-##### **4. Personalização do Cuidado:**
-- **Perfil do Paciente**: Análise de histórico médico textual
-- **Preferências**: Identificação de padrões de comunicação e compreensão
-- **Aderência**: Monitoramento de relatos sobre medicação e tratamento
-
-##### **5. Pesquisa e Desenvolvimento:**
-- **Mineração de Literatura**: Análise de artigos científicos para descobertas
-- **Farmacovigilância**: Detecção de efeitos adversos em relatórios
-- **Epidemiologia**: Identificação de padrões populacionais em textos médicos
-
-##### **6. Governança de Dados e Ética:**
-- **Transparência**: Processamento claro e auditável de dados textuais
-- **Privacidade**: Anonimização automática de informações pessoais
-- **Viés**: Detecção e mitigação de preconceitos em textos médicos
-
-#### 🧠 Algoritmos de NLP Recomendados:
-
-1. Named Entity Recognition (NER):
-
-- **SpaCy**: Para identificação de entidades médicas
-- **BERT Médico**: Modelo especializado em textos de saúde
-- **BioBERT**: Para reconhecimento de termos biomédicos
-
-2. Classificação de Texto:
-
-- **TF-IDF + SVM**: Para categorização de documentos
-- **Word2Vec**: Para representação vetorial de termos médicos
-- **BERT**: Para classificação contextual avançada
-
-3. Extração de Informações:
-
-- **Regex Patterns**: Para valores numéricos (pressão, colesterol)
-- **Rule-based Systems**: Para sintomas e diagnósticos
-- **Information Extraction**: Para relacionamentos médicos
-
-4. Análise Semântica:
-
-- **Topic Modeling**: Identificação de tópicos médicos
-- **Sentiment Analysis**: Análise de urgência e gravidade
-- **Text Summarization**: Resumo de prontuários médicos
-
-### 🎯 Casos de Uso Específicos para CardioIA
-
-#### 1. Assistente de Diagnóstico Inteligente:
-
-```python
-# Exemplo de pipeline de análise
-def analyze_symptoms(text):
-    symptoms = extract_symptoms(text)
-    risk_factors = identify_risk_factors(text)
-    probability = calculate_cardiovascular_risk(symptoms, risk_factors)
-    return generate_recommendations(probability)
-```
-
-#### 2. Classificação Automática de Prontuários:
-
-- **Categorização**: Por tipo de doença cardiovascular
-- **Priorização**: Por urgência e gravidade
-- **Roteamento**: Para especialistas apropriados
-
-#### 3. Extração de Dados para Pesquisa:
-
-- **Epidemiologia**: Padrões populacionais de doenças
-- **Farmacovigilância**: Efeitos adversos de medicamentos
-- **Qualidade Assistencial**: Indicadores de atendimento
-
-#### 4. Sistema de Alertas Inteligentes:
-
-- **Detecção de Emergências**: Sintomas de alto risco
-- **Monitoramento**: Evolução de pacientes
-- **Prevenção**: Identificação de fatores de risco
-
-### 📈 Métricas de Qualidade dos Dados
-
-#### ✅ Pontos Fortes:
-
-- **Especialização**: Conteúdo específico de cardiologia
-- **Atualização**: Baseado em literatura médica recente
-- **Estruturação**: Organização clara por tópicos
-- **Completude**: Cobertura abrangente da especialidade
-- **Linguagem**: Português brasileiro médico
-
-#### ⚠️ Limitações:
-
-- **Volume**: 3 textos (mínimo exigido atendido, mas pode ser expandido)
-- **Variedade**: Foco específico em cardiologia
-- **Interatividade**: Textos estáticos (não interativos)
-- **Validação**: Necessita revisão por especialistas para aplicação clínica
-
-### 🔬 Próximos Passos para Expansão
-
-#### 1. Ampliação do Corpus:
-
-- **Artigos Científicos**: Integração com PubMed/SciELO
-- **Prontuários Médicos**: Dados clínicos reais (anônimos)
-- **Guias Clínicos**: Protocolos de tratamento
-- **Casos Clínicos**: Relatos de casos complexos
-
-#### 2. Processamento Avançado:
-
-- **Análise Temporal**: Evolução de sintomas
-- **Correlação Multimodal**: Integração com dados numéricos
-- **Personalização**: Adaptação por perfil do paciente
-- **Aprendizado Contínuo**: Atualização de modelos
-
-#### 3. Validação Clínica:
-
-- **Revisão por Especialistas**: Cardiologistas experientes
-- **Testes de Usabilidade**: Interface médica
-- **Estudos de Precisão**: Comparação com diagnóstico humano
-- **Certificação**: Aprovação regulatória quando aplicável
-
----
-
-## 🖼️ Parte 3 - Dados Visuais (VC)
-
-### ✅ **Status: CONCLUÍDO**
+Em resumo, essas análises potencializam a eficiência, a precisão e a inovação em projetos de IA aplicados à saúde, promovendo melhores resultados clínicos e avanços científicos.
 
 ### 📁 **Arquivos de Dados**
 
@@ -485,36 +259,6 @@ A análise de imagens é um pilar da cardiologia moderna. Integrar um módulo de
 
 ---
 
-## 🔒 Governança de Dados e Ética
-
-### **Princípios Aplicados:**
-- **Transparência**: Origem e processamento dos dados claramente documentados
-- **Qualidade**: Validação e limpeza rigorosa dos dados
-- **Privacidade**: Dados anonimizados e sem informações pessoais
-- **Viés**: Análise de representatividade demográfica e clínica
-- **Reprodutibilidade**: Scripts e metodologia completamente documentados
-
-### **Considerações Éticas:**
-- Dados coletados respeitando diretrizes médicas
-- Uso exclusivo para fins educacionais e de pesquisa
-- Conformidade com regulamentações de dados de saúde
-
----
-
-## 🚀 Próximas Etapas
-
-### **Futuras (Fases 2-7):**
-Para mais informações sobre as próximas fases do projeto CardioIA, consulte o arquivo [project/OVERVIEW.md](project/OVERVIEW.md).
-
-### **Recomendações para Expansão:**
-
-- **Ampliar Corpus Textual**: Adicionar artigos científicos do SciELO
-- **Dados Mais Recentes**: Considerar datasets cardiológicos contemporâneos
-- **Validação Clínica**: Revisão por especialistas em cardiologia
-- **Integração Multimodal**: Combinação de dados numéricos, textuais e visuais
-
----
-
 ## 👥 Equipe
 
 - Gustavo Castro (RM560831)
@@ -523,14 +267,6 @@ Para mais informações sobre as próximas fases do projeto CardioIA, consulte o
 
 ---
 
-## 📚 Referências
-
-1. Janosi, A., Steinbrunn, W., Pfisterer, M., & Detrano, R. (1989). Heart Disease [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C52P4X
-2. Detrano, R. et al. (1989). International application of a new probability algorithm for the diagnosis of coronary artery disease. American Journal of Cardiology.
-3. UCI Machine Learning Repository. Heart Disease Dataset. Disponível em: https://archive.ics.uci.edu/dataset/45/heart+disease
-
----
-
-**Projeto desenvolvido para FIAP - Fase 1: Batimentos de Dados**  
+**Projeto desenvolvido para FIAP AI 2025 - Fase 1: Batimentos de Dados**  
 
 [LICENSE.md](LICENSE.md)
